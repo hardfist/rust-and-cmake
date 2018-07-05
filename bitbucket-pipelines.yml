@@ -8,6 +8,7 @@ image: rust:1.27
 pipelines:
   default:
     - step:
+        deployment: test
         script: # Modify the commands below to build your repository.
           - apt-get update -y
           - apt-get install cmake make g++ gcc -y
